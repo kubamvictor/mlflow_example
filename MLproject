@@ -7,8 +7,8 @@ entry_points:
         parameters:
             train_data: 
                 type: path
-                default: "data/splitter/train.csv"    
+                default: "./data/splitter/train.csv"    
             test_data: 
                 type: path
-                default: "data/splitter/test.csv"
-        command: "python train_model.py --train_data {train_data} --test_data {test_data}"
+                default: "./data/splitter/test.csv"
+        command: "python ./src/train_model.py {train_data} {test_data}"
